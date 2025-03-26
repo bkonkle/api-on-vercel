@@ -8,7 +8,8 @@
     "check": "xo",
     "build": "pkgroll",
     "test": "dotenvx run -- tsx --test",
-    "dev": "dotenvx run -- tsx src/main.ts"
+    "dev": "dotenvx run -- tsx src/main.ts",
+    "start": "node dist/main.mjs"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1",
