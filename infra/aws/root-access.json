@@ -1,0 +1,46 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "S3ScopedAccess",
+      "Effect": "Allow",
+      "Action": ["s3:*"],
+      "Resource": ["arn:aws:s3:::api-*"]
+    },
+    {
+      "Sid": "S3ListAccess",
+      "Effect": "Allow",
+      "Action": "s3:ListAllMyBuckets",
+      "Resource": "*"
+    },
+    {
+      "Sid": "DynamoDBScopedAccess",
+      "Effect": "Allow",
+      "Action": "dynamodb:*",
+      "Resource": "arn:aws:dynamodb:*:*:table/api-*"
+    },
+    {
+      "Sid": "SQSScopedAccess",
+      "Effect": "Allow",
+      "Action": "sqs:*",
+      "Resource": "arn:aws:sqs:*:*:api-*"
+    },
+    {
+      "Sid": "KinesisScopedAccess",
+      "Effect": "Allow",
+      "Action": "kinesis:*",
+      "Resource": "arn:aws:kinesis:*:*:stream/api-*"
+    },
+    {
+      "Sid": "IAMScopedAccess",
+      "Effect": "Allow",
+      "Action": "iam:*",
+      "Resource": [
+        "arn:aws:iam::*:policy/api-*",
+        "arn:aws:iam::*:role/api-*",
+        "arn:aws:iam::*:group/api-*",
+        "arn:aws:iam::*:user/api-*"
+      ]
+    }
+  ]
+}

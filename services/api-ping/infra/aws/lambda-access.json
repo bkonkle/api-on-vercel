@@ -1,0 +1,42 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "CloudWatchLogScopedAccess",
+      "Effect": "Allow",
+      "Action": "logs:*",
+      "Resource": [
+        "arn:aws:logs:*:*:log-group:/aws/lambda/api-ping-*",
+        "arn:aws:logs:*:*:log-group:/aws/lambda/api-ping-*:log-stream:*",
+        "arn:aws:logs:*:*:log-group:/aws/apigateway/api-ping-*",
+        "arn:aws:logs:*:*:log-group:/aws/apigateway/api-ping-*:log-stream:*"
+      ]
+    },
+    {
+      "Sid": "LambdaScopedAccess",
+      "Effect": "Allow",
+      "Action": "lambda:*",
+      "Resource": "arn:aws:lambda:*:*:function:api-ping-*"
+    },
+    {
+      "Sid": "LambdaEventSourceMappingGeneralAccess",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:CreateEventSourceMapping",
+        "lambda:GetEventSourceMapping"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "LambdaEventSourceMappingAccess",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:CreateEventSourceMapping",
+        "lambda:UpdateEventSourceMapping",
+        "lambda:DeleteEventSourceMapping",
+        "lambda:GetEventSourceMapping"
+      ],
+      "Resource": "arn:aws:lambda:*:*:event-source-mapping:*"
+    }
+  ]
+}

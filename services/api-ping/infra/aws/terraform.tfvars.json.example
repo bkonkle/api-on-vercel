@@ -1,0 +1,8 @@
+{
+    "developers": {
+        "username": {
+            "login_profile": true,
+            "pgp_key": "keybase:username"
+        }
+    }
+}
