@@ -3,11 +3,12 @@
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
+  "module": "./dist/main.mjs",
   "scripts": {
     "check": "xo",
+    "build": "pkgroll",
     "test": "dotenvx run -- tsx --test",
-    "dev": "dotenvx run -- tsx src/main.ts",
-    "start": "node src/index.ts"
+    "dev": "dotenvx run -- tsx src/main.ts"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1",
