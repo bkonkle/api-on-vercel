@@ -7,7 +7,7 @@ import bodyParser from 'koa-bodyparser'
 import helmet from 'koa-helmet'
 import jwt from 'koa-jwt'
 import morgan from 'koa-morgan'
-import {initRouter} from './router'
+import {initRouter} from '../lib/router'
 
 export async function main() {
   const app = new Koa()
