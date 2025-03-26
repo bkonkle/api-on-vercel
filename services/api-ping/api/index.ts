@@ -66,8 +66,8 @@ export async function main() {
   app.listen(port, () => {
     console.log(`Server running on port ${port}`)
   })
+
+  return app
 }
 
-if (esMain(import.meta)) {
-  await main()
-}
+export default await main()
