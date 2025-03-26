@@ -1,4 +1,9 @@
 {
   "version": 2,
-  "rewrites": [{"source": "/(.*)", "destination": "/dist/main.mjs"}]
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ]
 }
