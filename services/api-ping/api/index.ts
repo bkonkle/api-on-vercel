@@ -69,4 +69,10 @@ export async function main() {
   return app
 }
 
-export default await main()
+export default (async () => {
+  const result = await main()
+  return result
+  // eslint-disable-next-line unicorn/prefer-top-level-await
+})().catch((error: unknown) => {
+  console.error('Error initializing module:', error)
+})
