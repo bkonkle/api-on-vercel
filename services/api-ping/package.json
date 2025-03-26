@@ -1,5 +1,5 @@
 {
-  "name": "@vercel/api-ping",
+  "name": "@bkonkle/api-ping",
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
