@@ -6,10 +6,8 @@
   "module": "./dist/main.mjs",
   "scripts": {
     "check": "xo",
-    "build": "pkgroll",
     "test": "dotenvx run -- tsx --test",
-    "dev": "dotenvx run -- tsx src/main.ts",
-    "start": "node dist/main.mjs"
+    "dev": "dotenvx run -- tsx src/main.ts"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1",
