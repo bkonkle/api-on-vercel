@@ -3,7 +3,13 @@
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
-  "module": "./dist/main.mjs",
+  "module": "./api/index.ts",
+  "exports": {
+    "import": {
+      "types": "./api/index.ts",
+      "default": "./api/index.js"
+    }
+  },
   "scripts": {
     "check": "xo",
     "test": "dotenvx run -- tsx --test",
