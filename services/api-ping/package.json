@@ -6,7 +6,8 @@
   "scripts": {
     "check": "xo",
     "test": "dotenvx run -- tsx --test",
-    "dev": "dotenvx run -- tsx src/main.ts"
+    "dev": "dotenvx run -- tsx src/main.ts",
+    "start": "node src/index.ts"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1",
