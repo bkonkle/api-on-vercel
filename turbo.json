@@ -5,6 +5,7 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "env": ["AUTH_CLIENT_ID", "AUTH_AUDIENCE", "AUTH_URL"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "lint": {
