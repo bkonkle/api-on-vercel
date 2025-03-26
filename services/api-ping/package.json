@@ -2,14 +2,6 @@
   "name": "@bkonkle/api-ping",
   "private": true,
   "license": "UNLICENSED",
-  "type": "module",
-  "module": "./api/index.ts",
-  "exports": {
-    "import": {
-      "types": "./api/index.ts",
-      "default": "./api/index.js"
-    }
-  },
   "scripts": {
     "check": "xo",
     "test": "dotenvx run -- tsx --test",

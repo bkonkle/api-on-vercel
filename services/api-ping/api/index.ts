@@ -1,6 +1,5 @@
 import process from 'node:process'
 import cors from '@koa/cors'
-import esMain from 'es-main'
 import jwksRsa from 'jwks-rsa'
 import Koa from 'koa'
 import bodyParser from 'koa-bodyparser'
